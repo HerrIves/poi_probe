@@ -1,25 +1,21 @@
 package exel_reader;
 	
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.Locale;
+import java.util.*;
 
 public class ExelMain {
+    int a =1;
+    int b =1;
+    int c =1;
     public static void main(String...args) throws InterruptedException, IOException {
 //        System.out.println("Hello Git");
 //        ExelTime.timeWork();
 //        ExelDataTypes.dataTypes();
 //        Workbook workbook = WorkbookFactory.create(new File("c:/temp/tempCREATE.xls"));
-        System.out.println(printSome(5, 15));
+        System.out.println(new ExelMain().printSome(2));
 
     }
-    public static long printSome(long x, long y){
-            if(x==y){/*DO NOTHING*/
-            }else{
-                for(long i= x+1; i<=y; i++){
-                    x=x*i;
-                }
-            }
-            return x;
+    public double printSome(long x){
+        return a*Math.pow(x, 2)+b*x+c;
     }
 }
